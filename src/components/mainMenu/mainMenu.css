@@ -1,0 +1,31 @@
+.main-menu {
+    background: #41df1d;
+}
+
+/* ITEM */
+
+.main-menu-item {
+    padding: 20px;    
+}
+
+.main-menu-item:hover {
+    cursor: pointer;
+}
+
+.main-menu-button {
+    background: #000;
+}
+
+.bullet {
+    height: 2px;
+    width: 32px;
+    background: red;
+}
+
+.bullet:hover {
+    width: 64px;
+}
+
+.display-text {
+    color: green;
+}

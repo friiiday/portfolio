@@ -1,25 +1,31 @@
-import { useNavigate } from "react-router";
+import "./mainMenu.css"
 
 type menuItem = {
     displayText: string;
-    path: string;
 }
 
-export const MainMenuItem: React.FC<menuItem> = ({ displayText, path }) => {
+export const MainMenuItem: React.FC<menuItem> = ({ displayText }) => {
 
-    const navigate = useNavigate()
 
     const buttonClicked = () => {
-        navigate(path)
+        // navigate(path)
     }
 
     return (
         <div 
-            className={ `main-menu-item:` + displayText.toLowerCase() } 
+            className="main-menu-item"
+            id={ displayText.toLowerCase()}  
             key={ displayText.toLowerCase() } 
             onClick={ buttonClicked }
         >
-            <button>{ displayText }</button>
+            <div className="main-menu-button">
+                <div className="bullet">
+                    
+                </div>
+                <div className="display-text">
+                    { displayText }
+                </div>
+            </div>
         </div>
     )
 }
