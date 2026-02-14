@@ -1,11 +1,15 @@
-import { useState } from 'react'
 import './App.css'
+import { Outlet } from 'react-router'
+import { MainMenu } from './components/mainMenu/MainMenu'
 
 function App() {
 
   return (
     <>
-hello
+      <MainMenu />
+      <div className="outlet">
+        <Outlet />
+      </div>
     </>
   )
 }
