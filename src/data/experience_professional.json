@@ -1,0 +1,9 @@
+[
+  {
+    "period": { "from": "06. February 2023", "to": "Today" },
+    "company": "ASAP Engineering GmbH",
+    "role": "Fullstack Software Engineer",
+    "tasks": ["Built stuff", "Fixed bugs"],
+    "tags": ["React", "TS"]
+  }
+]

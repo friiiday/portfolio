@@ -1,0 +1,16 @@
+{
+    "mainMenu": {
+        "home": "Home",
+        "experience": "Erfahrung",
+        "projects": "Projekte"
+    },
+
+    "welcome": {
+        "roles": "Software Engineer, Clean-Code Enthusiast, Software Architekt"
+    },
+
+    "coverLetter": {
+        "text": "Ich bin Softwareentwickler mit umfassender Erfahrung in TypeScript, React, Java und Python. Seit über 18 Jahren beschäftige ich mich leidenschaftlich mit der Softwareentwicklung. Zunächst privat, dann als Freelancer und mittlerweile auch hauptberuflich. Diese langjährige Erfahrung hat mir ein tiefes technisches Verständnis und eine ausgeprägte Fähigkeit zur Lösung komplexer Herausforderungen vermittelt. Besonders fasziniert mich die Entwicklung robuster, skalierbarer Systeme, die unter anspruchsvollen Bedingungen zuverlässig funktionieren. Als Full-Stack-Entwickler bringe ich fundierte Kenntnisse in Frontend- und Backend-Technologien mit und habe bereits mehrere Projekte erfolgreich umgesetzt. Ich lege großen Wert auf sauberen, wartbaren Code, eine durchdachte Architektur und die kontinuierliche Verbesserung von Performance und Nutzererlebnis. Die Kombination aus technischer Exzellenz und Teamarbeit ist für mich essentiell und ich freue mich darauf, meine Fähigkeiten in einem hochqualifizierten Umfeld wie dem Ihren einzubringen. Ich lege großen Wert auf sauberen, wartbaren Code und bringe fundierte Kenntnisse in verschiedenen Programmiersprachen und Frameworks mit. Mein Anspruch ist es, mich kontinuierlich weiterzuentwickeln und innovative Lösungen zu gestalten."
+    }
+  
+}

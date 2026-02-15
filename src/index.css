@@ -34,7 +34,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -59,17 +58,4 @@ button:hover {
   border-color: #27a48d;
   filter: drop-shadow(0 0 2em #27a48daa);
   transition: all 0.33s;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

@@ -1,4 +1,6 @@
 .main-menu {
+    position: fixed;
+    float: left;
     background: #41df1d;
 }
 
