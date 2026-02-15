@@ -2,14 +2,14 @@ import React from "react";
 
 export type timePeriod = {
     from: string;
-    till: string;
+    to: string;
 }
 
-export const TimePeriod: React.FC<timePeriod> = ({ from, till }) => {
+export const TimePeriod: React.FC<timePeriod> = ({ from, to }) => {
 
     return (
         <div className="time-period">
-            { from } <br />—<br /> { till }
+            { from } <br />—<br /> { to }
         </div>
     )
 }

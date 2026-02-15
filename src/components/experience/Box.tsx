@@ -22,7 +22,7 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
 
             <TimePeriod 
                 from={ period.from }
-                till={ period.till }
+                to={ period.to }
             />
 
             <span className="company">{ company }</span>
