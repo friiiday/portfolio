@@ -1,13 +1,25 @@
 .main-menu {
     position: fixed;
     float: left;
-    background: #41df1d;
+}
+
+/* LOGO */
+
+.name {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 10px;
+    margin-bottom: 18vh;
+    letter-spacing: 8px;
+    /* background-color: #0eaa8e;
+    color: #1a1a1a; */
 }
 
 /* ITEM */
 
 .main-menu-item {
-    padding: 20px;    
+    padding: 20px;
 }
 
 .main-menu-item:hover {
@@ -15,19 +27,21 @@
 }
 
 .main-menu-button {
-    background: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
 }
 
 .bullet {
-    height: 2px;
-    width: 32px;
-    background: red;
-}
-
-.bullet:hover {
-    width: 64px;
+    margin-top: 5px;
+    height: 3px;
+    border-radius: 1px;
+    background: #25d1b2;
+    transition: all 0.25s;
 }
 
 .display-text {
-    color: green;
+    font-size: 1.3rem;
+    color: #0eaa8e;
 }

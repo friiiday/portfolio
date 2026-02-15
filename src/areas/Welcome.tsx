@@ -7,7 +7,6 @@ export const Welcome = () => {
 
     return (
         <div className="welcome">
-            <div className="name">Stefan Mayr</div>
             <div className="roles">{ t("welcome.roles") }</div>
             <div className="image">IMG</div>
             <CoverLetter />

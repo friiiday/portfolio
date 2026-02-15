@@ -3,7 +3,7 @@ import { MainMenuItem } from "./mainMenuItem"
 import { useTranslation } from "react-i18next";
 
 export const MainMenu = () => {
-    const {i18n, t } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <div className="main-menu">
@@ -12,9 +12,6 @@ export const MainMenu = () => {
             <MainMenuItem displayText={ t("mainMenu.experience") } />
             <MainMenuItem displayText={ t("mainMenu.projects") } />
 
-            {/* TODO: Extract to own component & wrap in float button ⬇️ */}
-            <button onClick={() => i18n.changeLanguage("de")}>DE</button>
-            <button onClick={() => i18n.changeLanguage("en")}>EN</button>
         </div>
     )
 }

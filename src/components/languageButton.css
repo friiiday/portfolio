@@ -1,0 +1,26 @@
+.language-button {
+    user-select: none;
+
+    position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+
+    border: 2px solid #00000066;
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+.label {
+    margin-top: 10px;
+}
+
+.language-button:hover {
+    border-color: #27a48d;
+    filter: drop-shadow(0 0 2em #27a48daa);
+    transition: all 0.33s;
+}

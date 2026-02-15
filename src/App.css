@@ -3,3 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+/* AREAS */
+.areas {
+  margin-left: 200px;
+  display: flow-root;
+}

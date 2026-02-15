@@ -1,4 +1,5 @@
 import "./mainMenu.css"
+import { useHover } from "@uidotdev/usehooks";
 
 type menuItem = {
     displayText: string;
@@ -6,6 +7,9 @@ type menuItem = {
 
 export const MainMenuItem: React.FC<menuItem> = ({ displayText }) => {
 
+    const [ref, hovering] = useHover();
+
+    const length = hovering ? "64px" : "32px"
 
     const buttonClicked = () => {
         // navigate(path)
@@ -14,14 +18,15 @@ export const MainMenuItem: React.FC<menuItem> = ({ displayText }) => {
     return (
         <div 
             className="main-menu-item"
-            id={ displayText.toLowerCase()}  
+            id={ displayText.toLowerCase() }  
             key={ displayText.toLowerCase() } 
+            ref={ ref }
             onClick={ buttonClicked }
         >
             <div className="main-menu-button">
-                <div className="bullet">
+                <span className="bullet" style={{ width: length }}>
                     
-                </div>
+                </span>
                 <div className="display-text">
                     { displayText }
                 </div>
