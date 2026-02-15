@@ -6,15 +6,18 @@ export type ExperienceProfessional = {
     period: timePeriod;
     company: string;
     role: string;
-    tasks: string[];
+    tasks?: string[];
     link?: string;
-    tags: string[];
+    tags?: string[];
 }
+
 
 export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, tasks, link, tags }) => {
 
     const handleClicked = () => { 
-        window.open(link ? link : "#", "_blank", "noopener,noreferrer"); 
+        if (link) {
+            window.open(link, "_blank", "noopener,noreferrer"); 
+        }
     };
 
     return (
@@ -28,9 +31,13 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
             <span className="company">{ company }</span>
             <span className="role">{ role }</span>
             
-            <Tasks tasks={ tasks } />
+            {
+                tasks ? <Tasks tasks={ tasks } /> : <></>
+            }
 
-            <TagBox tags={ tags } />
+            {    
+                tags ? <TagBox tags={ tags } /> : <></>
+            }
         </div>
     )
 }

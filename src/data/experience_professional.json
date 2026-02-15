@@ -11,7 +11,7 @@
     "period": { "from": "15. August 20223", "to": "05. February 2023" },
     "company": "ASAP Engineering GmbH",
     "role": "Fullstack Software Engineer - Internship",
-    "tasks": ["Design and implementation of an interactive tutorial system to support developer onboarding and tool usage.", "Integration of iTu into an existing resource planning tool, taking into account technical interfaces and user requirements", "Development of a modular front end for tutorials with a focus on usability and expandability", "Conducting user interviews and feedback rounds for iterative improvement of the system", "Documentation of project work, including technical architecture, use cases and lessons learned "],
+    "tasks": ["Design and implementation of an interactive tutorial system to support developer onboarding and tool usage.", "Integration into an existing resource planning tool, taking into account technical interfaces and user requirements", "Development of a modular front end for tutorials with a focus on usability and expandability", "Conducting user interviews and feedback rounds for iterative improvement of the system", "Documentation of project work, including technical architecture, use cases and lessons learned "],
     "tags": ["React", "TS"],
     "link": "https://www.asap.de/"
   },
