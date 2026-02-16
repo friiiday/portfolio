@@ -1,0 +1,6 @@
+.cover-letter {
+  letter-spacing: 1.4%;
+  word-spacing: 3%;
+  width: clamp(min(93.75vw, 50ch), 70vw, 75ch);
+  line-height: 20px;
+}
