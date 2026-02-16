@@ -3,7 +3,7 @@ import { MainMenu } from './components/mainMenu/MainMenu'
 import { Experience } from './areas/Experience'
 import { Projects } from './areas/Projects'
 import { Welcome } from './areas/Welcome'
-import { LanguageButton } from './components/LanguageButton'
+import { LanguageButton } from './components/languageButton/LanguageButton'
 
 function App() {
 
