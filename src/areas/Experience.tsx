@@ -1,5 +1,5 @@
 import "./experience.css"
-import { Box, ExperienceProfessional } from "../components/experience/Box"
+import { Box, ExperienceProfessional } from "../components/experience/box/Box"
 import dataProfessional from "../data/experience_professional.json"
 import dataTraining from "../data/experience_training.json"
 

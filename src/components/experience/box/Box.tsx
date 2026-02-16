@@ -1,7 +1,7 @@
 import "./box.css"
-import { TagBox } from "./tags/TagBox";
-import { Tasks } from "./Tasks";
-import { TimePeriod, timePeriod } from "./TimePeriod";
+import { TagBox } from "../tags/TagBox";
+import { Tasks } from "../Tasks";
+import { TimePeriod, timePeriod } from "../TimePeriod";
 
 export type ExperienceProfessional = {
     period: timePeriod;
@@ -11,7 +11,6 @@ export type ExperienceProfessional = {
     link?: string;
     tags?: string[];
 }
-
 
 export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, tasks, link, tags }) => {
 
