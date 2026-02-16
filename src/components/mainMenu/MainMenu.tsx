@@ -7,7 +7,6 @@ export const MainMenu = () => {
 
     return (
         <div className="main-menu">
-            <span className="name">Stefan Mayr</span>
             <MainMenuItem displayText={ t("mainMenu.home") } />
             <MainMenuItem displayText={ t("mainMenu.experience") } />
             <MainMenuItem displayText={ t("mainMenu.projects") } />

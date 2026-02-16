@@ -4,11 +4,13 @@ import { Experience } from './areas/Experience'
 import { Projects } from './areas/Projects'
 import { Welcome } from './areas/Welcome'
 import { LanguageButton } from './components/languageButton/LanguageButton'
+import { Header } from './components/header/Header'
 
 function App() {
 
 	return (
 		<>
+			<Header />
 			<MainMenu />
 			<LanguageButton />
 			<div className="areas">

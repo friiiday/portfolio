@@ -13,6 +13,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 7px;
+  background: linear-gradient(145deg, #272727, #202020);
+  box-shadow:  2px 2px 3px #1b1b1b,
+              -2px -2px 3px #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background: linear-gradient(145deg, #29bda2, #0d9980);
+  border: solid #2d2d2d 2px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  border-color: #2d2d2d;
+  background: linear-gradient(145deg, #29bda288, #0d997f86);
+}
+
 ::-moz-selection {
     background: #27a48d;
     color: #242424;

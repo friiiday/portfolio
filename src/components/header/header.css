@@ -1,0 +1,21 @@
+
+.header {
+    position: fixed;
+    float: left;
+    display: flex;
+    background-color: #242424;
+    width: 100%;
+
+}
+
+/* LOGO */
+
+.name {
+    
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 10px;
+    letter-spacing: 8px;
+    background-color: #0eaa8e;
+    color: #1a1a1a;
+}

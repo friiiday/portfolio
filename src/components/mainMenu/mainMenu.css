@@ -1,19 +1,7 @@
 .main-menu {
     position: fixed;
     float: left;
-}
-
-/* LOGO */
-
-.name {
-    display: flex;
-    font-size: 2rem;
-    font-weight: 300;
-    padding: 10px;
-    margin-bottom: 18vh;
-    letter-spacing: 8px;
-    /* background-color: #0eaa8e;
-    color: #1a1a1a; */
+    margin-top: 200px;
 }
 
 /* ITEM */

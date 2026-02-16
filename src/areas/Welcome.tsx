@@ -1,3 +1,4 @@
+import "./welcome.css"
 import { CoverLetter } from "../components/coverLetter/CoverLetter"
 import { useTranslation } from "react-i18next";
 
