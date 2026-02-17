@@ -1,7 +1,7 @@
 import "./box.css"
 import { TagBox } from "../tags/TagBox";
 import { Tasks } from "../Tasks";
-import { TimePeriod, timePeriod } from "../TimePeriod";
+import { TimePeriod, timePeriod } from "../timePeriod/TimePeriod";
 
 export type ExperienceProfessional = {
     period: timePeriod;
@@ -27,17 +27,20 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
                 from={ period.from }
                 to={ period.to }
             />
-
-            <span className="company">{ company }</span>
-            <span className="role">{ role }</span>
             
-            {
-                tasks ? <Tasks tasks={ tasks } /> : <></>
-            }
+            <div className="info">
 
-            {    
-                tags ? <TagBox tags={ tags } /> : <></>
-            }
+                <span className="company">{ company }</span>
+                <span className="role">{ role }</span>
+                
+                {
+                    tasks ? <Tasks tasks={ tasks } /> : <></>
+                }
+
+                {    
+                    tags ? <TagBox tags={ tags } /> : <></>
+                }
+            </div>
         </div>
     )
 }

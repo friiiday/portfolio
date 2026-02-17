@@ -1,0 +1,46 @@
+.code-flow-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+  filter: blur(3px);
+  opacity: 0.22;
+}
+
+.code-snippet {
+  position: absolute;
+  white-space: pre;
+  font-family: "Fira Code", "JetBrains Mono", monospace;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  max-width: 45ch;
+
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transform: rotate(var(--rotation));
+
+  animation:
+    drift var(--duration) linear infinite,
+    fadeCode 14s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) rotate(var(--rotation));
+  }
+  100% {
+    transform: translate(var(--drift-x), var(--drift-y)) rotate(var(--rotation));
+  }
+}
+
+@keyframes fadeCode {
+  0% { opacity: 0; }
+  20% { opacity: 0.75; }
+  80% { opacity: 0.75; }
+  100% { opacity: 0; }
+}

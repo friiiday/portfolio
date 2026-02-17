@@ -1,4 +1,5 @@
 import React from "react";
+import "./timePeriod.css";
 
 export type timePeriod = {
     from: string;

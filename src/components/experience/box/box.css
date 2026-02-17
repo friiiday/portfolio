@@ -1,9 +1,23 @@
 
 .box {
+    
+    display: flex;
     margin-top: 60px;
     margin-bottom: 60px;
-    border-radius: 30px;
-    border-radius: 30px;
-    background: #242424;
+    background: rgba(14, 170, 141, 0.042);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(14, 170, 142, 0.44);
+}
 
+.info {
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.company {
+    font-size: 20px;
+    font-weight: 600;
 }
