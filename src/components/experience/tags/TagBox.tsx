@@ -7,9 +7,9 @@ type TagBoxProps = {
 export const TagBox: React.FC<TagBoxProps> = ({ tags }) => {
 
     const list = tags.map(
-        (tag) => {
+        (tag, i) => {
             return (
-                <Tag label={ tag } />
+                <Tag key={ i } label={ tag } />
             )
         }
     )

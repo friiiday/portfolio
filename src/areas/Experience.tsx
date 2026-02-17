@@ -8,7 +8,7 @@ export const Experience = () => {
     const experienceProfessional: ExperienceProfessional[] = dataProfessional
     const experienceTraining: ExperienceProfessional[] = dataTraining
 
-    const generateBoxesProfessional = experienceProfessional.map( (experience) => {
+    const generateBoxesProfessional = experienceProfessional.map( (experience, i) => {
 
         return (
             <Box 
@@ -18,11 +18,12 @@ export const Experience = () => {
                 tasks={ experience.tasks } 
                 tags={ experience.tags } 
                 link={ experience.link } 
+                key={ i }
             />
         )
     })
 
-        const generateBoxesTraining = experienceTraining.map( (experience) => {
+        const generateBoxesTraining = experienceTraining.map( (experience, i) => {
 
         return (
             <Box 
@@ -30,6 +31,7 @@ export const Experience = () => {
                 company={ experience.company } 
                 role={ experience.role } 
                 tasks={ experience.tasks } 
+                key={ i }
             />
         )
     })

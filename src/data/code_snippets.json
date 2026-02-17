@@ -6,7 +6,7 @@
         "const compose = (...fns) => x =>\n    fns.reduceRight((v, fn) => fn(v), x);",
         "interface User {\n    id: string;\n    name: string;\n  role: 'admin' | 'editor' | 'viewer';\n}",
         "const fetchData = async (url: string) => {\n    const res = await fetch(url);\n    return res.json();\n};",
-        "type Result<T> = { ok: true; value: T } | { ok: false; error: string };",
+        "type Result<T> = { ok: true;\n value: T } | { ok: false;\n error: string };",
         "function assert(condition: boolean, message: string) {\n    if (!condition) throw new Error(message);\n}",
         "const delay = (ms: number) =>\n    new Promise(resolve => setTimeout(resolve, ms));",
         "export const pipe =\n    (...fns: Function[]) =>\n    (value: any) =>\n        fns.reduce((v, fn) => fn(v), value);",

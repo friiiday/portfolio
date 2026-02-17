@@ -6,9 +6,9 @@ type TasksProps = {
 export const Tasks: React.FC<TasksProps> = ({ tasks }) => {
 
     const list = tasks.map(
-        (task) => {
+        (task, i) => {
             return (
-                <li>{ task }</li>
+                <li key={ i }>{ task }</li>
             )
         }
     )
