@@ -5,40 +5,75 @@ import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 gsap.registerPlugin(ScrambleTextPlugin);
 
 type ScrambledTextProps = {
-    text: string;
-    speed?: number;
-    duration?: number;
-}
+  text: string;
+  speed?: number;
+  duration?: number;
+  randomInterval?: boolean;
+  chars?: string;
+};
 
-export const ScrambledText: React.FC<ScrambledTextProps> = ({ text, speed, duration }) => {
+export const ScrambledText: React.FC<ScrambledTextProps> = ({
+  text,
+  speed = 0.4,
+  duration = 2.5,
+  randomInterval = false,
+  chars = "upperAndLowerCase"
+}) => {
   const textRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<number | null>(null);
 
-  useEffect(() => {
+  const getRandomDelay = () => {
+    return Math.random() * 5000 + 5000;
+  };
+
+  const runScrambleTransition = () => {
     if (!textRef.current) return;
 
-    gsap.fromTo(
-      textRef.current,
-      { scrambleText: "" },
-      {
-        scrambleText: {
-          text: text,
-          chars: "upperAndLowerCase",
-          speed: speed ? speed : 0.4,
-        },
-        duration: duration ? duration : 2.5,
-        ease: "power2.out",
+    const tl = gsap.timeline();
+
+    // scramble out
+    tl.to(textRef.current, {
+      scrambleText: {
+        text,
+        chars,
+        speed,
+      },
+      duration: duration * 0.4,
+      ease: "power2.in",
+    });
+
+    // scramble in
+    tl.to(textRef.current, {
+      scrambleText: {
+        text,
+        chars,
+        speed,
+      },
+      duration: duration * 0.6,
+      ease: "power2.out",
+    });
+
+    if (randomInterval) {
+      const delay = getRandomDelay();
+      timeoutRef.current = window.setTimeout(() => {
+        runScrambleTransition();
+      }, delay);
+    }
+  };
+
+  useEffect(() => {
+    runScrambleTransition();
+
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
       }
-    );
-  }, []);
+    };
+  }, [text, speed, duration, randomInterval]);
 
   return (
-    <div
+    <span
       ref={textRef}
-      style={{
-        fontSize: "1.8rem",
-        fontWeight: 600,
-        letterSpacing: "0.5px",
-      }}
     />
   );
-}
+};
