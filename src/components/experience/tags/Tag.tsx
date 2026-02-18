@@ -1,3 +1,4 @@
+import "./tagBox.css"
 
 type TagProps = {
     label: string

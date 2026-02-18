@@ -1,3 +1,4 @@
+import "./tagBox.css"
 import { Tag } from "./Tag"
 
 type TagBoxProps = {
