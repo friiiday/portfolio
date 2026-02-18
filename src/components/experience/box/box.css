@@ -1,7 +1,7 @@
 
 .box {
-    
     display: flex;
+    z-index: 9;
     margin-top: 60px;
     margin-bottom: 60px;
     background: rgba(14, 170, 141, 0.042);

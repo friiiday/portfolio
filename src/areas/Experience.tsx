@@ -22,7 +22,6 @@ export const Experience = () => {
             />
         )
     })
-
         const generateBoxesTraining = experienceTraining.map( (experience, i) => {
 
         return (
