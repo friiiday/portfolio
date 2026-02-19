@@ -1,0 +1,12 @@
+
+.task-bullet {
+    border: 2px #27a48d solid;
+    background-color: rgba(0, 255, 255, 0.23);
+    border-radius: 5px 0px 4px 0px;
+    padding: 0px 3px 0px 3px;
+    margin: 2px 5px 2px 2px;
+    font-size: 5px;
+    display: flexbox;
+    position: relative;
+    bottom: 3px;
+}

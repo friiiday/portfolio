@@ -1,6 +1,6 @@
 import "./box.css"
 import { TagBox } from "../tags/TagBox";
-import { Tasks } from "../Tasks";
+import { Tasks } from "../../task/Tasks";
 import { TimePeriod, timePeriod } from "../timePeriod/TimePeriod";
 
 export type ExperienceProfessional = {
