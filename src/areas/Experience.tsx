@@ -17,7 +17,7 @@ export const Experience = () => {
                 role={ experience.role } 
                 tasks={ experience.tasks } 
                 tags={ experience.tags } 
-                link={ experience.link } 
+                url={ experience.url } 
                 key={ i }
             />
         )

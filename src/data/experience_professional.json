@@ -5,7 +5,7 @@
     "role": "Fullstack Software Engineer",
     "tasks": ["Full-Stack development of complex tools with JavaScript + Angular, TypeScript + React, Java and Python, including GUI design and backend logic", "Automation and increased efficiency through GitHub Actions, tool launcher development, and data synchronisation between Codebeamer and Jira", " Architecture work and test coverage: Design and expansion of software architectures and implementation of comprehensive testing procedures (unit, integration, regression, etc.) "],
     "tags": ["React", "TS"],
-    "link": "https://www.asap.de/"
+    "url": "https://www.asap.de/"
   },
   {
     "period": { "from": "15. August 2022", "to": "05. February 2023" },
@@ -13,7 +13,7 @@
     "role": "Fullstack Software Engineer - Internship",
     "tasks": ["Design and implementation of an interactive tutorial system to support developer onboarding and tool usage.", "Integration into an existing resource planning tool, taking into account technical interfaces and user requirements", "Development of a modular front end for tutorials with a focus on usability and expandability", "Conducting user interviews and feedback rounds for iterative improvement of the system", "Documentation of project work, including technical architecture, use cases and lessons learned "],
     "tags": ["React", "TS"],
-    "link": "https://www.asap.de/"
+    "url": "https://www.asap.de/"
   },
   {
     "period": { "from": "01. June 2019", "to": "Today" },
@@ -21,7 +21,7 @@
     "role": "Software, Web and Tool development & Design",
     "tasks": ["Development of modular software, web and tool solutions with JavaScript/TypeScript and React, Java and Python", "Design of clear, functional UIs and implementation of robust backend logic", "Conception and implementation of modular frontends with a focus on usability, extensibility and consistent design "],
     "tags": ["React", "TS"],
-    "link": "https://www.asap.de/"
+    "url": "https://www.asap.de/"
   },
   {
     "period": { "from": "01. May 2017", "to": "03. November 2020" },
@@ -29,6 +29,6 @@
     "role": " Optical consultant, Sales manager",
     "tasks": ["Expert advice and fitting of visual aids, including performing precise eye tests", "Active sales and service-oriented customer care to increase sales", "Responsibility for product presentation, stock management, sales figures and branch organisation", "Employee management: resource planning, training and team coordination"],
     "tags": ["React", "TS"],
-    "link": "https://www.fielmann.de/"
+    "url": "https://www.fielmann.de/"
   }
 ]

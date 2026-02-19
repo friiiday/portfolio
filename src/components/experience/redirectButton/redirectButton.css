@@ -1,0 +1,12 @@
+.redirect-button {
+    display: inline-flex;
+    position: relative;
+    padding-left: 10px;
+}
+
+#redirect-icon:hover {
+    fill: #27a48d;
+    filter: drop-shadow(0 0 1em #87a7a1aa);
+    transition: all 0.33s;
+    cursor: pointer;
+}

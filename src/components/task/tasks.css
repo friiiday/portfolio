@@ -10,3 +10,11 @@
     position: relative;
     bottom: 3px;
 }
+
+.task {
+    letter-spacing: 1.4%;
+    word-spacing: 3%;
+    width: clamp(min(93.75vw, 35ch), 70vw, 50ch);
+    word-wrap: break-word;
+    line-height: 20px;
+}

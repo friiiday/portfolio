@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import "./SoftCodeFlowBackground.css";
-import data from "../../../data/code_snippets.json";
+import data from "../../data/code_snippets.json";
 
 interface CodeSnippetFile { 
     snippets: string[]; 

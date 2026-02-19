@@ -2,26 +2,21 @@ import "./box.css"
 import { TagBox } from "../tags/TagBox";
 import { Tasks } from "../../task/Tasks";
 import { TimePeriod, timePeriod } from "../timePeriod/TimePeriod";
+import { RedirectButton } from "../redirectButton/RedirectButton";
 
 export type ExperienceProfessional = {
     period: timePeriod;
     company: string;
     role: string;
     tasks?: string[];
-    link?: string;
+    url?: string;
     tags?: string[];
 }
 
-export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, tasks, link, tags }) => {
-
-    const handleClicked = () => { 
-        if (link) {
-            window.open(link, "_blank", "noopener,noreferrer"); 
-        }
-    };
+export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, tasks, url, tags }) => {
 
     return (
-        <div className="box" onClick={ handleClicked }>
+        <div className="box">
 
             <TimePeriod 
                 from={ period.from }
@@ -30,8 +25,13 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
             
             <div className="info">
 
-                <span className="company">{ company }</span>
-                <span className="role">{ role }</span>
+                <div className="info-header">
+
+                    <span className="company">{ company }</span>
+                    <span className="role">{ role }</span>
+                    <RedirectButton url={ url } />
+
+                </div>
                 
                 {
                     tasks ? <Tasks tasks={ tasks } /> : <></>
