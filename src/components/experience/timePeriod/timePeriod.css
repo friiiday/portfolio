@@ -1,34 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=New+Amsterdam&display=swap');
 
-.time-period {
-    
-    position: relative;
-    display: grid;
-    align-self: center;
-    
-    min-width: 138px;
+.time-period {   
     margin-left: 15px;
-    
-    font-family: "Istok Web", sans-serif;
-    font-size: 15px;
-    
-    text-align: center;
-}
-
-.hyphen {
-    font-size: larger;
-    text-align: center;
-}
-
-.day {
-    margin-right: 5px;
-}
-    
-.year {
-    margin-left: 5px ;
-}
-    
-.today {
-    align-self: center;
-    justify-self: center;
+    font-size: 15px;    
 }

@@ -17,8 +17,6 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
 
     return (
         <div className="box">
-
-
             
             <div className="info">
 
@@ -29,13 +27,20 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
                     <RedirectButton url={ url } />
 
                 </div>
-                
-                {
-                    tasks ? <Tasks tasks={ tasks } /> : <></>
-                }
+
+                <TimePeriod 
+                    from={ period.from }
+                    to={ period.to }
+                />
 
                 {    
                     tags ? <TagBox tags={ tags } /> : <></>
+                }
+
+                Collapse ⬇️
+
+                {
+                    tasks ? <Tasks tasks={ tasks } /> : <></>
                 }
             </div>
         </div>
