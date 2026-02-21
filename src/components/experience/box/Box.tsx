@@ -18,10 +18,7 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
     return (
         <div className="box">
 
-            <TimePeriod 
-                from={ period.from }
-                to={ period.to }
-            />
+
             
             <div className="info">
 

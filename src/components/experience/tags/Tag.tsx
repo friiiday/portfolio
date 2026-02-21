@@ -1,10 +1,10 @@
-import "./tagBox.css"
+import "./tags.css"
 
-type TagProps = {
+interface props {
     label: string
 }
 
-export const Tag: React.FC<TagProps> = ({ label }) => {
+export const Tag: React.FC<props> = ({ label }) => {
 
     return (
         <div className="tag">

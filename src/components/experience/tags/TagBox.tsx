@@ -1,8 +1,8 @@
-import "./tagBox.css"
+import "./tags.css"
 import { Tag } from "./Tag"
 
-type TagBoxProps = {
-    tags: string[]
+interface TagBoxProps {
+    tags: string[];
 }
 
 export const TagBox: React.FC<TagBoxProps> = ({ tags }) => {

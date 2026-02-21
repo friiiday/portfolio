@@ -5,16 +5,20 @@
     margin: 3px;
     padding: 2px;
     border-radius: 9px;
+    box-shadow: inset 2px 1px 5px #27a48d21;
+    justify-content: center;
 }
 
 .tag {
     background-color: #0eaa8d6e;
     padding: 5px 10px 5px 10px;
     margin: 5px;
-    color: #2d2d2d;
+
+    font-size: 15px;
     font-weight: 500;
+    text-align: center;
+    text-justify: center;
+    
     border-radius: 18px;
-    border: 2px solid #27a48d;
-    filter: drop-shadow(0 0 5px #27a48daa);
-    letter-spacing: 1.4%;
+    border: 0.1rem solid #27a48d;
 }
