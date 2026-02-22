@@ -6,7 +6,7 @@
 
 #redirect-icon:hover {
     fill: #27a48d;
-    filter: drop-shadow(0 0 1em #87a7a1aa);
     transition: all 0.33s;
+    filter: invert(90%);
     cursor: pointer;
 }

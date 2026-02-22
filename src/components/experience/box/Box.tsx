@@ -3,6 +3,7 @@ import { TagBox } from "../tags/TagBox";
 import { Tasks } from "../../task/Tasks";
 import { TimePeriod, timePeriod } from "../timePeriod/TimePeriod";
 import { RedirectButton } from "../redirectButton/RedirectButton";
+import { Collapsible } from "../../collapsible/Collapsible";
 
 export type ExperienceProfessional = {
     period: timePeriod;
@@ -37,11 +38,13 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
                     tags ? <TagBox tags={ tags } /> : <></>
                 }
 
-                Collapse ⬇️
+                <Collapsible>
+                    {
+                        tasks ? <Tasks tasks={ tasks } /> : <></>
+                    }
+                </Collapsible>
 
-                {
-                    tasks ? <Tasks tasks={ tasks } /> : <></>
-                }
+
             </div>
         </div>
     )

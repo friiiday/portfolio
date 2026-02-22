@@ -22,7 +22,7 @@ export const RedirectButton: React.FC<RedirectProps> = ({ url }) => {
                         className="redirect-button"
                         onClick={ handleClicked }
                     >
-                        <img id="redirect-icon" src="./redirectIcon.svg" />
+                        <img id="redirect-icon" src="/redirectIcon.svg" />
                     </span>
             }
         </>

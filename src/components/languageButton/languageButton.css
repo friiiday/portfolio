@@ -11,9 +11,9 @@
 	border-radius: 50px;
 	text-align: center;
 
-    border: 2px solid #3bc818;
-    background-color: #1a1a1a;
+    border: 3px inset #3bc818;
     cursor: pointer;
+    transition: all 0.8s;
 }
 
 .label {
@@ -21,7 +21,6 @@
 }
 
 .language-button:hover {
-    border-color: #27a48d;
-    filter: drop-shadow(0 0 2em #27a48daa);
     transition: all 0.33s;
+    filter: invert(90%);
 }

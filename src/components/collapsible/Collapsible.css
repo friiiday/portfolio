@@ -1,0 +1,40 @@
+/* --- Content animation --- */
+.collapsible-content {
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 0.8s ease;
+}
+
+.collapsible-content.is-collapsed {
+  max-height: 0;
+}
+
+/* --- Button --- */
+.collapsible-button {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.collapsible-button:hover {
+    transition: all 0.33s;
+    filter: invert(90%);
+
+}
+
+.icon {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.33s ease;
+}
+
+/* When open → fade icons */
+.collapsible-button.is-open .icon {
+    transform: rotate(0deg);
+}
+
+.collapsible-button.is-open .icon {
+    transform: rotate(180deg);
+}
