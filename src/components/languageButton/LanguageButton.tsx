@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 export const LanguageButton = () => {
 
-    const {i18n } = useTranslation();
+    const { i18n } = useTranslation();
     
     const toggleLanguage = () => {
         if (i18n.language == "de") {
@@ -17,7 +17,7 @@ export const LanguageButton = () => {
     return (
         <div className="language-button" onClick={ () => toggleLanguage() }>
             <div className="label">
-            <img src="/languageIcon.svg" />
+                <img src="/languageIcon.svg" />
             </div>
         </div>
     )
