@@ -12,9 +12,19 @@ export type ExperienceProfessional = {
     tasks?: string[];
     url?: string;
     tags?: string[];
+    collapsible?: boolean;
 }
 
-export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, tasks, url, tags }) => {
+export const Box: React.FC<ExperienceProfessional> = (
+    { 
+        period, 
+        company, 
+        role, 
+        tasks, 
+        url, 
+        tags,
+        collapsible 
+    }) => {
 
     return (
         <div className="box">
@@ -38,12 +48,11 @@ export const Box: React.FC<ExperienceProfessional> = ({ period, company, role, t
                     tags ? <TagBox tags={ tags } /> : <></>
                 }
 
-                <Collapsible>
+                <Collapsible fixed={ !collapsible }>
                     {
                         tasks ? <Tasks tasks={ tasks } /> : <></>
                     }
                 </Collapsible>
-
 
             </div>
         </div>

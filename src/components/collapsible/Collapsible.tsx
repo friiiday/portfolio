@@ -1,32 +1,40 @@
 import React, { useState, ReactNode } from "react";
 import "./Collapsible.css";
+import CollapsibleButton from "./CollapsibleButton";
 
 type CollapsibleProps = {
   children: ReactNode;
   defaultCollapsed?: boolean;
+  fixed?: boolean;
 };
 
 export const Collapsible: React.FC<CollapsibleProps> = ({
-  children,
-  defaultCollapsed = true,
-}) => {
+    children,
+    defaultCollapsed = true,
+    fixed
+    }) => {
   const [collapsed, setCollapsed] = useState(defaultCollapsed);
 
   return (
     <div className="collapsible">
-      <div
-        className={`collapsible-button ${collapsed ? "is-collapsed" : "is-open"}`}
-        onClick={() => setCollapsed((c) => !c)}
-      >
-        {/* Icon: open (arrow down) */}
-        <div className="icon icon">
-          <img src="/arrowIcon.svg" />
-        </div>
-      </div>
+        {
 
-      <div className={`collapsible-content ${collapsed ? "is-collapsed" : "is-open"}`}>
-        {children}
-      </div>
+            !fixed &&
+            <CollapsibleButton 
+                collapsed={ collapsed }
+                onClick={ () => setCollapsed((c) => !c) }
+            />
+        }
+
+            <div 
+                className={`collapsible-content 
+                    ${fixed ? "is-open" 
+                        : collapsed ? "is-collapsed" 
+                            : "is-open"}`
+                }
+            >
+                {children}
+            </div>
     </div>
   );
 };

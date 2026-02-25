@@ -18,6 +18,7 @@ export const Experience = () => {
                 tasks={ experience.tasks } 
                 tags={ experience.tags } 
                 url={ experience.url } 
+                collapsible={ true }
                 key={ i }
             />
         )
@@ -30,6 +31,7 @@ export const Experience = () => {
                 company={ experience.company } 
                 role={ experience.role } 
                 tasks={ experience.tasks } 
+                collapsible={ false }
                 key={ i }
             />
         )
