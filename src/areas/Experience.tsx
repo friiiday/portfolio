@@ -2,6 +2,7 @@ import "./experience.css"
 import { Box, ExperienceProfessional } from "../components/experience/box/Box"
 import dataProfessional from "../data/experience_professional.json"
 import dataTraining from "../data/experience_training.json"
+import { SkillRadar } from "../components/skillRadar/SkillRadar"
 
 export const Experience = () => {
 
@@ -40,19 +41,29 @@ export const Experience = () => {
     return (
         <div className="experience">
 
-            <div className="professional">
-                <h3>Professional</h3>
-                { 
-                    generateBoxesProfessional                    
-                }
+            <div className="overview">
+                {/* TODO: Evtl space? */}
+                <SkillRadar />
+                
             </div>
 
-            <div className="training">
+            <div className="history">
+                <h2>History</h2>
 
-                <h3>Training</h3>              
-                {
-                    generateBoxesTraining
-                }
+                <div className="professional">
+                    <h3>Professional</h3>
+                    { 
+                        generateBoxesProfessional                    
+                    }
+                </div>
+
+                <div className="training">
+
+                    <h3>Training</h3>              
+                    {
+                        generateBoxesTraining
+                    }
+                </div>
             </div>
         </div>
     )
