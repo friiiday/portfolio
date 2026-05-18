@@ -10,7 +10,6 @@ export const MainMenu = () => {
             <MainMenuItem displayText={ t("mainMenu.home") } />
             <MainMenuItem displayText={ t("mainMenu.experience") } />
             <MainMenuItem displayText={ t("mainMenu.projects") } />
-
         </div>
     )
 }

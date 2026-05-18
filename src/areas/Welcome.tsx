@@ -9,7 +9,7 @@ export const Welcome = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="welcome">
+        <div className="welcome" id={ ` ${ t("mainMenu.home") }` }>
             <ScrambledText 
                 text={ t("welcome.roles") } 
                 speed={ 0.2 } 
