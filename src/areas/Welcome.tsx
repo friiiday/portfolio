@@ -1,17 +1,17 @@
 import "./welcome.css"
 import { CoverLetter } from "../components/coverLetter/CoverLetter"
-import { useTranslation } from "react-i18next";
+
 import { ScrambledText } from "../components/ScrambledText";
 
 export const Welcome = () => {
     
 
-    const { t } = useTranslation();
+    
 
     return (
-        <div className="welcome" id={ ` ${ t("mainMenu.home") }` }>
+        <div className="welcome" id="home-area" >
             <ScrambledText 
-                text={ t("welcome.roles") } 
+                text={ "Full-Stack Software Engineer Clean-Code Enthusiast Designer" } 
                 speed={ 0.2 } 
                 duration={ 3 } 
             />

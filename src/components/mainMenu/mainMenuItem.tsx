@@ -11,18 +11,19 @@ export const MainMenuItem: React.FC<menuItem> = ({ displayText }) => {
 
     const [ref, hovering] = useHover();
     const length = hovering ? "64px" : "32px"
+    const displayTextLowerCase = displayText.toLowerCase()
 
     const scrollTo = useScrollTo();
 
-    const buttonClicked = () => {
-        scrollTo(`#${ displayText }-area`, 80)
+    const buttonClicked = () => {        
+        scrollTo(`#${ displayTextLowerCase }-area`, 80)
     }    
 
     return (
         <div 
             className="main-menu-item"
-            id={ displayText.toLowerCase() }  
-            key={ displayText.toLowerCase() } 
+            id={ displayTextLowerCase }  
+            key={ displayTextLowerCase } 
             ref={ ref }
             onClick={ buttonClicked }
         >

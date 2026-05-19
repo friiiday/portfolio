@@ -3,11 +3,10 @@ import { Box, ExperienceProfessional } from "../components/experience/box/Box"
 import dataProfessional from "../data/experience_professional.json"
 import dataTraining from "../data/experience_training.json"
 import { SkillRadar } from "../components/skillRadar/SkillRadar"
-import { useTranslation } from "react-i18next"
 
 export const Experience = () => {
 
-    const { t } = useTranslation();
+    
 
     const experienceProfessional: ExperienceProfessional[] = dataProfessional
     const experienceTraining: ExperienceProfessional[] = dataTraining
@@ -43,7 +42,7 @@ export const Experience = () => {
     })
 
     return (
-        <div className="experience">
+        <div className="experience" id="experience-area">
 
             <div className="overview">
                 {/* TODO: Evtl space? */}
@@ -51,7 +50,7 @@ export const Experience = () => {
                 
             </div>
 
-            <div className="history" id={`${ t("mainMenu.experience") }-area`}>
+            <div className="history">
                 <h2>History</h2>
 
                 <div className="professional">
