@@ -1,6 +1,5 @@
-import { DateProps } from "../components/experience/timePeriod/TimePeriod"
 
-export const splitDate = (dateStr: string): DateProps => {
+export const splitDate = (dateStr: string) => {
     
     if (dateStr.toLowerCase() !== "today") {
 
