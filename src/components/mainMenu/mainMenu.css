@@ -1,7 +1,16 @@
+
 .main-menu {
-    position: fixed;
-    float: left;
-    margin-top: 145px;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+    .main-menu {
+        display: block;
+
+        position: fixed;
+        float: left;
+        margin-top: 145px;
+    }
 }
 
 /* ITEM */
