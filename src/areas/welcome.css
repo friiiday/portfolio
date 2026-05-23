@@ -2,3 +2,8 @@
 .welcome {
     padding-top: 10rem;
 }
+
+.roles {
+    font-size: 18px;
+    font-family: monospace;
+}
