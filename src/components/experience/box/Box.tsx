@@ -33,10 +33,8 @@ export const Box: React.FC<ExperienceProfessional> = (
 
                 <div className="info-header">
 
-                    <span className="company">{ company }</span>
                     <span className="role">{ role }</span>
-                    <RedirectButton url={ url } />
-
+                    <span className="company">{ company } <RedirectButton url={ url } /></span>
                 </div>
 
                 <TimePeriod 

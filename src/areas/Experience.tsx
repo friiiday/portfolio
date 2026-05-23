@@ -45,7 +45,6 @@ export const Experience = () => {
         <div className="experience" id="experience-area">
 
             <div className="overview">
-                {/* TODO: Evtl space? */}
                 <SkillRadar />
                 
             </div>
